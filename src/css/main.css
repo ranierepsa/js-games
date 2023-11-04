@@ -1,0 +1,59 @@
+body {
+    background-image: url('../images/grass.png');
+    background-repeat: repeat;
+    background-size: 4rem;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 40px;
+    width: 50em;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #62b800;
+    text-shadow: 2px 2px #123f00;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5sem;
+    letter-spacing: 0.1em;
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;    
+}
+
+button:focus {
+    color: #FFF;
+    background-color: #123f00;
+}
+
+.game {
+    width: 430px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+}
