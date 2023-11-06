@@ -2,10 +2,11 @@ export default class Card {
     isFlipped = false;
     isMatched = false;
 
-    constructor (gridPosition, imageId, imagePath) {
+    constructor (gridPosition, imageId, imagePath, imageView) {
         this.gridPosition = gridPosition;
         this.imageId = imageId;
         this.imagePath = imagePath;
+        this.imageView = imageView;
     }
 
     canClick() {
