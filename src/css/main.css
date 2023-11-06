@@ -53,7 +53,7 @@ button:focus {
     gap: 8px;
 }
 
-.item {
+.div-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,4 +61,14 @@ button:focus {
     width: 100px;
     height: 100px;
     border: 1px solid red;
+}
+
+.div-item-hidden-background {
+    background-image: none !important;
+    background-color: #505050 !important;
+}
+
+.img-item {
+    height: auto;
+    width: 100px;
 }
