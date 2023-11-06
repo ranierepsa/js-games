@@ -17,11 +17,14 @@ const game = {
 function onClickCard(elem) {
     const card = elem.target.card;
 
+    console.log(card.imagePath);
+
     // Exibindo a imagem da carta.
-    elem.target.src = card.imagePath;
+    elem.target.childNodes[0].src = card.imagePath;
+    console.log(elem.target);
 
     // Escondendo o backgroud da carta.
-    elem.target.parentElement.classList.remove('div-item-hidden-background');
+    elem.target.classList.remove('div-item-hidden-background');
 
 }
 
@@ -50,15 +53,15 @@ function generateCards() {
         const div = document.createElement('div');
         const img = document.createElement('img');
         img.id = index;
-        img.src = value.src;
-        img.addEventListener('click', onClickCard);
+        // img.src = value.src;
+        div.addEventListener('click', onClickCard);
         img.classList.add('img-item');
         div.classList.add('div-item-hidden-background');
         div.classList.add('div-item');
         div.appendChild(img);
         game.view.appendChild(div);
         const card = new Card(index, value.id, value.src, img);
-        img.card = card;
+        div.card = card;
         return card;
     });
 }
