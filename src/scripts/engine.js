@@ -41,10 +41,11 @@ function noMatchEvent(card1, card2) {
 }
 
 function flipCard(event) {
-    if (game.isInputLocked) return;
-
     const htmlElem = event.target;
     const card = htmlElem.card ? htmlElem.card : htmlElem.parentElement.card;
+
+    if (game.isInputLocked) return;
+    if (game.flippedCard && card.gridPosition === game.flippedCard.gridPosition) return;
 
     card.flip();
 
