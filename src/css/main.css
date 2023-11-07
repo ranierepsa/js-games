@@ -3,27 +3,23 @@ body {
     background-repeat: repeat;
     background-size: 4rem;
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    min-width: 624px;
+    align-items: center;
+    flex-direction: column;
 }
 
 main {
-    /* position: relative; */
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
-    padding: 20px 40px;
-    width: 50em;
+    width: 29em;
+    margin: 40px auto;
 }
 
 h1 {
     text-transform: uppercase;
     color: #62b800;
     text-shadow: 2px 2px #123f00;
-    font-size: 3em;
+    font-size: 2em;
     letter-spacing: 0.1em;
 }
 
@@ -44,23 +40,23 @@ button:focus {
 }
 
 .game {
-    width: 430px;
-    height: 430px;
+    width: 350px;
+    height: 400px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid black;
-    gap: 8px;
+    gap: 2px;
 }
 
 .div-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(80, 80, 80); */
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
 }
 
 .div-item-hidden-background {
@@ -70,5 +66,38 @@ button:focus {
 
 .img-item {
     height: auto;
-    width: 100px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.retry-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    background-color: #123f00;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #123f00;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #62b800;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.dev-name {
+    color: #ffd700;
+    padding: 10px 0;
+    text-decoration: none;
 }
